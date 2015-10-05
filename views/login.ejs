@@ -1,0 +1,22 @@
+<form action="/login" method="post">
+
+    <% if(locals.error){ %>
+    <div class="alert alert-danger" role="alert">
+        Error: <%= error %>
+    </div>
+    <% } %>
+
+    <input type="text"
+           class="form-control"
+           id="username"
+           name="username"
+           placeholder="username">
+
+    <input type="password"
+           class="form-control"
+           id="password"
+           name="password"
+           placeholder="password">
+
+    <button type="submit">Log in</button>
+</form>
